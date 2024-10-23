@@ -1,6 +1,6 @@
 {
-  "name": "com.frostbun.unit.extensions",
-  "displayName": "UniT Extensions",
+  "name": "com.theone.extensions",
+  "displayName": "TheOne Extensions",
   "description": "Common extension methods for Unity",
   "version": "1.1.1",
   "unity": "2022.3",
