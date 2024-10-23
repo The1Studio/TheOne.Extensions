@@ -1,11 +1,11 @@
 #nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using UnityEngine;
-    #if UNIT_JSON
+    #if THEONE_JSON
     using System.Globalization;
     using Newtonsoft.Json;
     #endif
@@ -123,7 +123,7 @@ namespace UniT.Extensions
             return $"<size={(pixel > 0 ? "+" : "-")}{Mathf.Abs(pixel)}>{str}</size>";
         }
 
-        #if UNIT_JSON
+        #if THEONE_JSON
         private static readonly JsonSerializerSettings JsonSettings = new JsonSerializerSettings
         {
             Culture               = CultureInfo.InvariantCulture,

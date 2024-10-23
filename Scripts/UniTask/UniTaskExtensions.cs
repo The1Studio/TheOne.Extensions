@@ -1,12 +1,12 @@
-﻿#if UNIT_UNITASK
+﻿#if THEONE_UNITASK
 #nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System;
     using System.Threading;
     using Cysharp.Threading.Tasks;
     using UnityEngine.Playables;
-    #if UNIT_MESSAGEPIPE
+    #if THEONE_MESSAGEPIPE
     using MessagePipe;
     #endif
 
@@ -29,7 +29,7 @@ namespace UniT.Extensions
             }
         }
 
-        #if UNIT_MESSAGEPIPE
+        #if THEONE_MESSAGEPIPE
         public static async UniTask WaitForSignalAsync<T>(this ISubscriber<T> subscriber, Func<T, bool>? filter = null, CancellationToken cancellationToken = default)
         {
             filter ??= _ => true;
