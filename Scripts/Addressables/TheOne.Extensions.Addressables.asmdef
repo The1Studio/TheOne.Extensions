@@ -1,6 +1,6 @@
 {
-  "name": "UniT.Extensions.Addressables",
-  "rootNamespace": "UniT.Extensions",
+  "name": "TheOne.Extensions.Addressables",
+  "rootNamespace": "TheOne.Extensions",
   "references": [
     "Unity.ResourceManager",
     "UniTask"
@@ -9,15 +9,15 @@
     {
       "name": "com.cysharp.unitask",
       "expression": "",
-      "define": "UNIT_UNITASK"
+      "define": "THEONE_UNITASK"
     },
     {
       "name": "com.unity.addressables",
       "expression": "",
-      "define": "UNIT_ADDRESSABLES"
+      "define": "THEONE_ADDRESSABLES"
     }
   ],
   "defineConstraints": [
-    "UNIT_ADDRESSABLES"
+    "THEONE_ADDRESSABLES"
   ]
 }
