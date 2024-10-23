@@ -1,6 +1,6 @@
 {
-  "name": "UniT.Extensions.MessagePipe",
-  "rootNamespace": "UniT.Extensions",
+  "name": "TheOne.Extensions.MessagePipe",
+  "rootNamespace": "TheOne.Extensions",
   "references": [
     "MessagePipe",
     "UniTask"
@@ -9,16 +9,16 @@
     {
       "name": "com.cysharp.unitask",
       "expression": "",
-      "define": "UNIT_UNITASK"
+      "define": "THEONE_UNITASK"
     },
     {
       "name": "com.cysharp.messagepipe",
       "expression": "",
-      "define": "UNIT_MESSAGEPIPE"
+      "define": "THEONE_MESSAGEPIPE"
     }
   ],
   "defineConstraints": [
-    "UNIT_UNITASK",
-    "UNIT_MESSAGEPIPE"
+    "THEONE_UNITASK",
+    "THEONE_MESSAGEPIPE"
   ]
 }

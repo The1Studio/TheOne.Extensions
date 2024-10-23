@@ -1,5 +1,5 @@
-﻿#nullable enable
-namespace UniT.Extensions
+#nullable enable
+namespace TheOne.Extensions
 {
     using System;
     using System.Collections.Generic;

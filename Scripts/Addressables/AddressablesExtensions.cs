@@ -1,9 +1,9 @@
 ﻿#nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System;
     using UnityEngine.ResourceManagement.AsyncOperations;
-    #if UNIT_UNITASK
+    #if THEONE_UNITASK
     using System.Threading;
     using Cysharp.Threading.Tasks;
     #else
@@ -65,7 +65,7 @@ namespace UniT.Extensions
             return asyncOperation.Result;
         }
 
-        #if UNIT_UNITASK
+        #if THEONE_UNITASK
         public static async UniTask ToUniTask(this AsyncOperationHandle asyncOperation, IProgress<float>? progress = null, CancellationToken cancellationToken = default)
         {
             try
