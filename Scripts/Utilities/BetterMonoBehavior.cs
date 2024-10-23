@@ -1,9 +1,9 @@
 ﻿#nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System.Diagnostics.CodeAnalysis;
     using UnityEngine;
-    #if UNIT_UNITASK
+    #if THEONE_UNITASK
     using System.Threading;
     #else
     using System;
@@ -50,7 +50,7 @@ namespace UniT.Extensions
 
         #region Async
 
-        #if UNIT_UNITASK
+        #if THEONE_UNITASK
         private CancellationTokenSource? disableCts;
 
         public CancellationToken GetCancellationTokenOnDisable()
