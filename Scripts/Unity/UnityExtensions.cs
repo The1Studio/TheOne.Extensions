@@ -1,9 +1,9 @@
 #nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System.Diagnostics.CodeAnalysis;
     using UnityEngine;
-    #if UNIT_ADDRESSABLES
+    #if THEONE_ADDRESSABLES
     using UnityEngine.ResourceManagement.AsyncOperations;
     #endif
 
@@ -209,7 +209,7 @@ namespace UniT.Extensions
             return Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), pivot ?? new Vector2(.5f, .5f));
         }
 
-        #if UNIT_ADDRESSABLES
+        #if THEONE_ADDRESSABLES
         public static void WaitForResultOrThrow(this AsyncOperationHandle asyncOperation)
         {
             try
