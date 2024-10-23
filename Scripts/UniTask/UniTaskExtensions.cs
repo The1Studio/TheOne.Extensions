@@ -1,18 +1,18 @@
-﻿#if UNIT_UNITASK
+﻿#if THEONE_UNITASK
 #nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System;
     using System.Threading;
     using Cysharp.Threading.Tasks;
     using UnityEngine.Playables;
-    #if UNIT_ADDRESSABLES
+    #if THEONE_ADDRESSABLES
     using UnityEngine.ResourceManagement.AsyncOperations;
     #endif
 
     public static class UniTaskExtensions
     {
-        #if UNIT_ADDRESSABLES
+        #if THEONE_ADDRESSABLES
         public static async UniTask ToUniTask(this AsyncOperationHandle asyncOperation, IProgress<float>? progress = null, CancellationToken cancellationToken = default)
         {
             try

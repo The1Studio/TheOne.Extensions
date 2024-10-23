@@ -1,13 +1,13 @@
-﻿#if !UNIT_UNITASK
+﻿#if !THEONE_UNITASK
 #nullable enable
-namespace UniT.Extensions
+namespace TheOne.Extensions
 {
     using System;
     using System.Collections;
     using System.Threading.Tasks;
     using UnityEngine;
     using UnityEngine.Playables;
-    #if UNIT_ADDRESSABLES
+    #if THEONE_ADDRESSABLES
     using UnityEngine.ResourceManagement.AsyncOperations;
     #endif
 
@@ -146,7 +146,7 @@ namespace UniT.Extensions
             callback?.Invoke();
         }
 
-        #if UNIT_ADDRESSABLES
+        #if THEONE_ADDRESSABLES
         public static IEnumerator ToCoroutine(this AsyncOperationHandle asyncOperation, Action? callback = null, IProgress<float>? progress = null)
         {
             try
