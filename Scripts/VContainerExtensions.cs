@@ -1,4 +1,4 @@
-﻿#if UNIT_VCONTAINER
+﻿#if THEONE_VCONTAINER
 #nullable enable
 namespace VContainer
 {
