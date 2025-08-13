@@ -9,5 +9,12 @@
     "name": "frostbun",
     "email": "manhnb1911@gmail.com",
     "url": "https://github.com/frostbun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The1Studio/TheOne.Extensions.git"
+  },
+  "publishConfig": {
+    "registry": "https://upm.the1studio.org/"
   }
 }
